@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input & Output Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h2>Enter a String</h2>
+            <form method="POST">
+                <input type="text" name="String" placeholder="Enter some text" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        {% if output %}
+        <div class="output-container">
+            <h2>Output</h2>
+            <p>{{ output.string }}</p>
+        </div>
+        {% endif %}
+    </div>
+
+
+    <div class="container">
+        <div class="input-container">
+            <h2>Enter a Code</h2>
+            <form method="POST">
+                <input type="text" name="Codes" placeholder="Enter The Code" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        {% if output %}
+        <div class="output-container">
+            <h2>Output</h2>
+            <p>{{ output.codes }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
