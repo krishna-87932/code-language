@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    margin: 20px;
+    background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -26,7 +27,8 @@ h2 {
 }
 
 input[type="text"] {
-    width: 100%;
+    
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 4px;
